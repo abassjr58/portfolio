@@ -9,7 +9,13 @@
   --secondary-color: #f20505;
 }
 body {
-  background-image: linear-gradient(to right, black, #f20505);
+  background-image: linear-gradient(
+    to right,
+    black,
+    #f20505,
+    var(--secondary-color)
+  );
+  background-repeat: no-repeat;
   color: aliceblue;
 }
 nav h1 {
@@ -51,7 +57,7 @@ nav ul :last-child {
   margin-block: 10px;
 }
 .header-section p {
-  width: 38%;
+  width: 38px;
   margin-bottom: 20px;
 }
 .header-section button {
@@ -239,7 +245,7 @@ nav ul :last-child {
 }
 .div5 {
   background-image: linear-gradient(
-    to right,
+    to left,
     var(--secondary-color),
     var(--primary-color)
   );
@@ -306,7 +312,7 @@ nav ul :last-child {
   border-radius: 10px;
   border: 2px;
   padding: 20px;
-} 
+}
 .btn6 {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
@@ -336,32 +342,74 @@ nav ul :last-child {
   border-radius: 10px;
 }
 .fa-palette {
-     color: var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(255, 183, 0, 0.452);
   padding: 10px;
   border-radius: 10px;
 }
 .fa-node-js {
-     color: var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(255, 183, 0, 0.452);
   padding: 10px;
   border-radius: 10px;
 }
 .fa-atom {
-     color: var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(255, 183, 0, 0.452);
   padding: 10px;
   border-radius: 10px;
 }
 .fa-tailwind-css {
-     color: var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(255, 183, 0, 0.452);
   padding: 10px;
   border-radius: 10px;
 }
 .fa-git-alt {
-     color: var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(255, 183, 0, 0.452);
   padding: 10px;
   border-radius: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+    
+  }
+
+  .header-section{
+    flex-direction:column;
+    gap: 20px;
+  }
+
+  .header-section p{
+    width:auto;
+  }
+
+  .div1{
+    grid-template-columns: auto;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.header-section p {
+  width: auto;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
