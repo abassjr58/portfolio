@@ -440,6 +440,9 @@ nav ul :last-child {
   .experience {
     gap: 30px;
   }
+  .header-section img {
+    position:static;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
